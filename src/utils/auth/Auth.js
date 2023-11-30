@@ -23,7 +23,6 @@ const saveUserToLocalstorage = (users)=>{
 }
 
 //Login user
-
 export const loginUser = (username, password)=>{
     const users = getUsersFromLocalStorage()
     const user =  users.find((u) =>u.username=== username && u.password === password)
